@@ -48,4 +48,37 @@ Here is the code:
 
 ![image](https://github.com/tzwukerf/canyouhackit2023/assets/77770175/b6fe3652-3999-4faa-acc5-9e4ece5f49e0)
 
-You can see with the for loop at the end that the order of arr (a variable which I renamed)
+You can see with the for loop at the end that the order of arr (a variable which I renamed). To simplify the code, what it is asking is that the order of the wires we're supposed to cut is the index of the wire_cut_sequence numbers from least to greatest. To illustrate:
+
+wire_cut_seq: 1 4 3 0 2 6 5
+index:        0 1 2 3 4 5 6
+
+You can see that the lowest value for wire_cut_sequence is at index 3 with a value of 0, the second lowest is at index 0 with a value of 1, and so on. In the end, we get our solution, which is 3 0 4 2 1 6 5.
+
+## phase_reverse
+
+![image](https://github.com/tzwukerf/canyouhackit2023/assets/77770175/c9f943ff-dae7-4de5-a298-ce91d42040d6)
+
+Because it only passes when your sum is -1 but you can't have any of your value be negative, this means we have to do an integer overflow. We have three numbers to work with. You can see by values at the top that all of our numbers are int, not unsigned int, meaning that our numbers are in two's complement. This means we want our result, -1, to be a lot of 1s (ffffff...)
+
+We running a 32 bit program, meaning that the first bit (the most significant bit) can't be zero for any of our three values or else that would be a negative number. We have to come up with a solution like this:
+
+1st: 0111...11
+2nd: 0100...00
+3rd: 0100...00
+
+This way, we get our -1. The three numbers are 2147483647, 1073741824, 1073741824.
+
+## phase_disposal
+
+This section uses gets to get user input, a highly unsafe function. Good thing we're the ones exploiting it :)
+
+![image](https://github.com/tzwukerf/canyouhackit2023/assets/77770175/52a38541-39b1-4d6e-a307-b74900693232)
+
+You can see that input is right above check_light and dis_mode (dispatch mode) (For anyone confused, it believes you'll input 6 characters, so undefined4 + undefined2). You can also see the if conditions you want:
+
+![image](https://github.com/tzwukerf/canyouhackit2023/assets/77770175/5a1293a8-83d2-4f6f-be69-64c8dfb6ddff)
+
+Inputting cache/EG should do the trick. If not (mine's didn't; it was cache.EG) then you can once again check x/20s 0x080eb27c in GDB.
+
+Finally, you have all the inputs you need to defuse the bomb and solve the challenge.
