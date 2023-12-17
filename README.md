@@ -1,6 +1,6 @@
 # Can You Hack It 2023
 Current points: 1140
-Categories (bolded are those I've yet to complete):
+Categories (bolded are those I have not completed):
 - Programming: **Birthday**, **Secure OTP**, Codebreaker, **Tiles**
 - Client-Side Protections: Disabled, Button Clicker, Weird Input, Paid Content
 - Netowrking: HTTP Basic, **WPA2 Deauth**
