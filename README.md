@@ -6,7 +6,7 @@ Still need:
 - Lonely Bot
 - "Frequency Analysis", Hidden Pictures
 - XOR, ENIGMA, Ransom
-- Defeating Dr. D Bugg*, Sentence Bot, Debug Me
+- Sentence Bot, Debug Me
 - Cross Site Scripting
 
-Most of the challenges I've solved I already see writeups for except for Stack Overflow (Exploitation) and Defuse (Reverse Engineering). The two I have starred, Defeating Dr. D Buggs and Tiles, are the next things on my agenda that I will do a writeup on.
+Most of the challenges I've solved I already see writeups for except for Stack Overflow (Exploitation) and Defuse (Reverse Engineering). The ones I have starred are the next things on my agenda that I will do a writeup on.
