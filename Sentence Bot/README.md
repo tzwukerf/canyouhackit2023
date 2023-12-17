@@ -1,4 +1,4 @@
-I am pretty sure you can brute force this challenge (which is why I'm guessing why it's been solved 250+ times) if you run ./sentencebot --setseed={brute forced number} but I wanted to challenge myself by looking through the binary. What I did is also brute forcing, but where my method shines is that if the binary ever consisted of a small delay (let's say 3-10 seconds) then the other method is completely inefficient. For this binary though, there is no difference. Choose whatever you prefer.
+I am pretty sure you can brute force this challenge (which is why I'm guessing why it's been solved 250+ times) if you run ./sentencebot --setseed={brute forced number} but I wanted to challenge myself by looking through the binary. What I did is also brute forcing, but where my method shines is that if the program ever consisted of a small delay (let's say 3-10 seconds) then the other method is completely inefficient. For this program though, there is no difference. Choose whatever you prefer.
 
 When you look through getFlag(), you see this:
 
