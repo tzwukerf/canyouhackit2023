@@ -34,11 +34,10 @@ Here is the code:
 ![image](https://github.com/tzwukerf/canyouhackit2023/assets/77770175/b6fe3652-3999-4faa-acc5-9e4ece5f49e0)
 
 You can see with the for loop at the end that the order of arr (a variable which I renamed). To simplify the code, what it is asking is that the order of the wires we're supposed to cut is the index of the wire_cut_sequence numbers from least to greatest. To illustrate:
-
+```
 wire_cut_seq: 1 4 3 0 2 6 5
-
 index:        0 1 2 3 4 5 6
-
+```
 You can see that the lowest value for wire_cut_sequence is at index 3 with a value of 0, the second lowest is at index 0 with a value of 1, and so on. In the end, we get our solution, which is 3 0 4 2 1 6 5.
 
 ## phase_reverse
