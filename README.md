@@ -1,5 +1,5 @@
 # Can You Hack It 2023
-Current points: 1040
+Current points: 1140
 Still need:
 - Birthday, Secure OTP, Tiles*
 - WPA2 Deauth
